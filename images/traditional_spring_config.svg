@@ -1,0 +1,48 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="800" height="350" viewBox="0 0 800 350">
+  <defs>
+    <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#000" />
+    </marker>
+  </defs>
+  
+  <!-- 背景 -->
+  <rect x="50" y="50" width="700" height="250" rx="10" ry="10" fill="#f9f9f9" stroke="#ccc" stroke-width="1" />
+  
+  <!-- 标题 -->
+  <text x="400" y="30" text-anchor="middle" font-family="Arial" font-size="16" font-weight="bold">传统 Spring 配置方式入口</text>
+  
+  <!-- 节点 -->
+  <rect x="100" y="100" width="200" height="40" rx="5" ry="5" fill="#fff" stroke="#e74c3c" stroke-width="2" />
+  <text x="200" y="125" text-anchor="middle" font-family="Arial" font-size="14">JetCacheConfig配置类</text>
+  
+  <rect x="350" y="100" width="200" height="40" rx="5" ry="5" fill="#fff" stroke="#3498db" stroke-width="2" />
+  <text x="450" y="125" text-anchor="middle" font-family="Arial" font-size="14">JetCacheBaseBeans</text>
+  
+  <rect x="600" y="100" width="150" height="40" rx="5" ry="5" fill="#fff" stroke="#2ecc71" stroke-width="2" />
+  <text x="675" y="125" text-anchor="middle" font-family="Arial" font-size="14">激活方法缓存</text>
+  
+  <rect x="350" y="180" width="150" height="40" rx="5" ry="5" fill="#fff" stroke="#2ecc71" stroke-width="2" />
+  <text x="425" y="205" text-anchor="middle" font-family="Arial" font-size="14">SpringConfigProvider</text>
+  
+  <rect x="550" y="180" width="150" height="40" rx="5" ry="5" fill="#fff" stroke="#2ecc71" stroke-width="2" />
+  <text x="625" y="205" text-anchor="middle" font-family="Arial" font-size="14">SimpleCacheManager</text>
+  
+  <rect x="350" y="260" width="150" height="40" rx="5" ry="5" fill="#fff" stroke="#3498db" stroke-width="2" />
+  <text x="425" y="285" text-anchor="middle" font-family="Arial" font-size="14">GlobalCacheConfig</text>
+  
+  <!-- 连接线 -->
+  <path d="M200 140 L450 100" stroke="#000" stroke-width="2" marker-end="url(#arrowhead)" />
+  <text x="325" y="120" text-anchor="middle" font-family="Arial" font-size="12">@Import</text>
+  
+  <path d="M200 140 L675 100" stroke="#000" stroke-width="2" marker-end="url(#arrowhead)" />
+  <text x="437.5" y="115" text-anchor="middle" font-family="Arial" font-size="12">@EnableMethodCache</text>
+  
+  <path d="M450 140 L425 180" stroke="#000" stroke-width="2" marker-end="url(#arrowhead)" />
+  <text x="437.5" y="155" text-anchor="middle" font-family="Arial" font-size="12">创建Bean</text>
+  
+  <path d="M450 140 L625 180" stroke="#000" stroke-width="2" marker-end="url(#arrowhead)" />
+  <text x="537.5" y="155" text-anchor="middle" font-family="Arial" font-size="12">创建Bean</text>
+  
+  <path d="M200 140 L425 260" stroke="#000" stroke-width="2" marker-end="url(#arrowhead)" />
+  <text x="312.5" y="200" text-anchor="middle" font-family="Arial" font-size="12">创建Bean</text>
+</svg>

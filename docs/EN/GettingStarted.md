@@ -41,7 +41,7 @@ This example using jedis to accessing redis(or you can consider using [lettuce](
 # POM
 ```xml
 <dependency>
-    <groupId>com.alicp.jetcache</groupId>
+    <groupId>org.vison.cache</groupId>
     <artifactId>jetcache-starter-redis</artifactId>
     <version>${jetcache.latest.version}</version>
 </dependency>
@@ -73,8 +73,8 @@ Then create the application class of Spring Boot:
 ```java
 package com.company.mypackage;
 
-import com.alicp.jetcache.anno.config.EnableCreateCacheAnnotation;
-import com.alicp.jetcache.anno.config.EnableMethodCache;
+import org.vison.cache.anno.config.EnableCreateCacheAnnotation;
+import org.vison.cache.anno.config.EnableMethodCache;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
@@ -95,12 +95,12 @@ Other code are same with standard Spring Boot Application. This class can run di
 This example using jedis to accessing redis: 
 ```xml
 <dependency>
-    <groupId>com.alicp.jetcache</groupId>
+    <groupId>org.vison.cache</groupId>
     <artifactId>jetcache-anno</artifactId>
     <version>${jetcache.latest.version}</version>
 </dependency>
 <dependency>
-    <groupId>com.alicp.jetcache</groupId>
+    <groupId>org.vison.cache</groupId>
     <artifactId>jetcache-redis</artifactId>
     <version>${jetcache.latest.version}</version>
 </dependency>
@@ -112,17 +112,17 @@ package com.company.mypackage;
 import java.util.HashMap;
 import java.util.Map;
 
-import com.alicp.jetcache.anno.CacheConsts;
-import com.alicp.jetcache.anno.config.EnableCreateCacheAnnotation;
-import com.alicp.jetcache.anno.config.EnableMethodCache;
-import com.alicp.jetcache.anno.support.GlobalCacheConfig;
-import com.alicp.jetcache.anno.support.SpringConfigProvider;
-import com.alicp.jetcache.embedded.EmbeddedCacheBuilder;
-import com.alicp.jetcache.embedded.LinkedHashMapCacheBuilder;
-import com.alicp.jetcache.redis.RedisCacheBuilder;
-import com.alicp.jetcache.support.Fastjson2KeyConvertor;
-import com.alicp.jetcache.support.JavaValueDecoder;
-import com.alicp.jetcache.support.JavaValueEncoder;
+import org.vison.cache.anno.CacheConsts;
+import org.vison.cache.anno.config.EnableCreateCacheAnnotation;
+import org.vison.cache.anno.config.EnableMethodCache;
+import org.vison.cache.anno.support.GlobalCacheConfig;
+import org.vison.cache.anno.support.SpringConfigProvider;
+import org.vison.cache.embedded.EmbeddedCacheBuilder;
+import org.vison.cache.embedded.LinkedHashMapCacheBuilder;
+import org.vison.cache.redis.RedisCacheBuilder;
+import org.vison.cache.support.Fastjson2KeyConvertor;
+import org.vison.cache.support.JavaValueDecoder;
+import org.vison.cache.support.JavaValueEncoder;
 import org.apache.commons.pool2.impl.GenericObjectPoolConfig;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;

@@ -3,7 +3,7 @@
  */
 package jetcache.samples.springboot;
 
-import com.alicp.jetcache.anno.Cached;
+import org.vison.cache.anno.Cached;
 
 /**
  * @author huangli

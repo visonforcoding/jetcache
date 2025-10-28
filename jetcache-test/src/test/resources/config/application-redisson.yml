@@ -19,9 +19,10 @@ jetcache:
   remote:
     default:
       type: redisson
-      keyConvertor: fastjson2
+      keyConvertor: jackson
       defaultExpireInMillis: 10000
-      keyPrefix: spring-data-redis
+      valueEncoder: bean:cacheJackson2 # 值的编码器
+      valueDecoder: bean:cacheJackson2
     A1:
       type: redisson
       keyConvertor: fastjson2

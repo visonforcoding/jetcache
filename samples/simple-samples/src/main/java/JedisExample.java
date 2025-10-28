@@ -2,9 +2,9 @@
  * Created on 2022/07/18.
  */
 
-import com.alicp.jetcache.Cache;
-import com.alicp.jetcache.redis.RedisCacheBuilder;
-import com.alicp.jetcache.support.Fastjson2KeyConvertor;
+import org.vison.cache.Cache;
+import org.vison.cache.redis.RedisCacheBuilder;
+import org.vison.cache.support.Fastjson2KeyConvertor;
 import org.apache.commons.pool2.impl.GenericObjectPoolConfig;
 import redis.clients.jedis.JedisPool;
 

@@ -2,7 +2,7 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <parent>
         <artifactId>jetcache-parent</artifactId>
-        <groupId>com.alicp.jetcache</groupId>
+        <groupId>org.vison.cache</groupId>
         <version>2.7.8-SNAPSHOT</version>
         <relativePath>../jetcache-parent</relativePath>
     </parent>
@@ -12,7 +12,7 @@
 
     <dependencies>
         <dependency>
-            <groupId>com.alicp.jetcache</groupId>
+            <groupId>org.vison.cache</groupId>
             <artifactId>jetcache-core</artifactId>
             <version>${project.version}</version>
         </dependency>
@@ -26,6 +26,10 @@
             <groupId>org.mvel</groupId>
             <artifactId>mvel2</artifactId>
             <optional>true</optional>
+        </dependency>
+        <dependency>
+            <groupId>com.fasterxml.jackson.core</groupId>
+            <artifactId>jackson-databind</artifactId>
         </dependency>
 
         <dependency>

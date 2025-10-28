@@ -1,8 +1,8 @@
-import com.alicp.jetcache.Cache;
-import com.alicp.jetcache.embedded.CaffeineCacheBuilder;
-import com.alicp.jetcache.support.DefaultCacheMonitor;
-import com.alicp.jetcache.support.DefaultMetricsManager;
-import com.alicp.jetcache.support.Fastjson2KeyConvertor;
+import org.vison.cache.Cache;
+import org.vison.cache.embedded.CaffeineCacheBuilder;
+import org.vison.cache.support.DefaultCacheMonitor;
+import org.vison.cache.support.DefaultMetricsManager;
+import org.vison.cache.support.Fastjson2KeyConvertor;
 
 import java.util.concurrent.TimeUnit;
 

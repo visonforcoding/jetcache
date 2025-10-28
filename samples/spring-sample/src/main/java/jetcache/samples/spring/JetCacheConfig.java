@@ -3,16 +3,16 @@
  */
 package jetcache.samples.spring;
 
-import com.alicp.jetcache.anno.CacheConsts;
-import com.alicp.jetcache.anno.config.EnableMethodCache;
-import com.alicp.jetcache.anno.support.GlobalCacheConfig;
-import com.alicp.jetcache.anno.support.JetCacheBaseBeans;
-import com.alicp.jetcache.embedded.EmbeddedCacheBuilder;
-import com.alicp.jetcache.embedded.LinkedHashMapCacheBuilder;
-import com.alicp.jetcache.redis.RedisCacheBuilder;
-import com.alicp.jetcache.support.Fastjson2KeyConvertor;
-import com.alicp.jetcache.support.JavaValueDecoder;
-import com.alicp.jetcache.support.JavaValueEncoder;
+import org.vison.cache.anno.CacheConsts;
+import org.vison.cache.anno.config.EnableMethodCache;
+import org.vison.cache.anno.support.GlobalCacheConfig;
+import org.vison.cache.anno.support.JetCacheBaseBeans;
+import org.vison.cache.embedded.EmbeddedCacheBuilder;
+import org.vison.cache.embedded.LinkedHashMapCacheBuilder;
+import org.vison.cache.redis.RedisCacheBuilder;
+import org.vison.cache.support.Fastjson2KeyConvertor;
+import org.vison.cache.support.JavaValueDecoder;
+import org.vison.cache.support.JavaValueEncoder;
 import org.apache.commons.pool2.impl.GenericObjectPoolConfig;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;

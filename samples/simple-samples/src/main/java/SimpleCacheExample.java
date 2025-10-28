@@ -1,5 +1,5 @@
-import com.alicp.jetcache.Cache;
-import com.alicp.jetcache.embedded.CaffeineCacheBuilder;
+import org.vison.cache.Cache;
+import org.vison.cache.embedded.CaffeineCacheBuilder;
 
 import java.util.concurrent.TimeUnit;
 

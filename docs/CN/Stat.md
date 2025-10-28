@@ -65,7 +65,7 @@ StatInfoLogger的构造参数设置为true会有更详细的统计信息，包�
     </encoder>
 </appender>
 
-<logger name="com.alicp.jetcache" level="INFO" additivity="false">
+<logger name="org.vison.cache" level="INFO" additivity="false">
     <appender-ref ref="JETCACHE_LOGFILE" />
 </logger>
 ```

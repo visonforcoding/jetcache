@@ -2,9 +2,9 @@
  * Created on 2022/07/18.
  */
 
-import com.alicp.jetcache.Cache;
-import com.alicp.jetcache.redis.lettuce.RedisLettuceCacheBuilder;
-import com.alicp.jetcache.support.Fastjson2KeyConvertor;
+import org.vison.cache.Cache;
+import org.vison.cache.redis.lettuce.RedisLettuceCacheBuilder;
+import org.vison.cache.support.Fastjson2KeyConvertor;
 import io.lettuce.core.RedisClient;
 
 /**

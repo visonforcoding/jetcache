@@ -11,6 +11,6 @@
         <aop:include name="aspactjAspect"/>
     </aop:aspectj-autoproxy>
 
-    <bean id="aspactjAspect" class="com.alicp.jetcache.anno.config.combined.AspectJAspect"/>
+    <bean id="aspactjAspect" class="org.vison.cache.anno.config.combined.AspectJAspect"/>
 
 </beans>

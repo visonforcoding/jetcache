@@ -4,7 +4,7 @@
     <modelVersion>4.0.0</modelVersion>
 
 
-    <groupId>com.alicp.jetcache</groupId>
+    <groupId>org.vison.cache</groupId>
     <artifactId>jetcache-bom</artifactId>
     <version>2.7.8-SNAPSHOT</version>
     <packaging>pom</packaging>
@@ -69,62 +69,62 @@
         <dependencies>
             <!-- jetcache -->
             <dependency>
-                <groupId>com.alicp.jetcache</groupId>
+                <groupId>org.vison.cache</groupId>
                 <artifactId>jetcache-anno</artifactId>
                 <version>2.7.8-SNAPSHOT</version>
             </dependency>
             <dependency>
-                <groupId>com.alicp.jetcache</groupId>
+                <groupId>org.vison.cache</groupId>
                 <artifactId>jetcache-anno-api</artifactId>
                 <version>2.7.8-SNAPSHOT</version>
             </dependency>
             <dependency>
-                <groupId>com.alicp.jetcache</groupId>
+                <groupId>org.vison.cache</groupId>
                 <artifactId>jetcache-core</artifactId>
                 <version>2.7.8-SNAPSHOT</version>
             </dependency>
             <dependency>
-                <groupId>com.alicp.jetcache</groupId>
+                <groupId>org.vison.cache</groupId>
                 <artifactId>jetcache-autoconfigure</artifactId>
                 <version>2.7.8-SNAPSHOT</version>
             </dependency>
             <dependency>
-                <groupId>com.alicp.jetcache</groupId>
+                <groupId>org.vison.cache</groupId>
                 <artifactId>jetcache-starter-redis</artifactId>
                 <version>2.7.8-SNAPSHOT</version>
             </dependency>
             <dependency>
-                <groupId>com.alicp.jetcache</groupId>
+                <groupId>org.vison.cache</groupId>
                 <artifactId>jetcache-starter-redis-lettuce</artifactId>
                 <version>2.7.8-SNAPSHOT</version>
             </dependency>
             <dependency>
-                <groupId>com.alicp.jetcache</groupId>
+                <groupId>org.vison.cache</groupId>
                 <artifactId>jetcache-starter-redis-springdata</artifactId>
                 <version>2.7.8-SNAPSHOT</version>
             </dependency>
             <dependency>
-                <groupId>com.alicp.jetcache</groupId>
+                <groupId>org.vison.cache</groupId>
                 <artifactId>jetcache-starter-redisson</artifactId>
                 <version>2.7.8-SNAPSHOT</version>
             </dependency>
             <dependency>
-                <groupId>com.alicp.jetcache</groupId>
+                <groupId>org.vison.cache</groupId>
                 <artifactId>jetcache-redis</artifactId>
                 <version>2.7.8-SNAPSHOT</version>
             </dependency>
             <dependency>
-                <groupId>com.alicp.jetcache</groupId>
+                <groupId>org.vison.cache</groupId>
                 <artifactId>jetcache-redis-lettuce</artifactId>
                 <version>2.7.8-SNAPSHOT</version>
             </dependency>
             <dependency>
-                <groupId>com.alicp.jetcache</groupId>
+                <groupId>org.vison.cache</groupId>
                 <artifactId>jetcache-redis-springdata</artifactId>
                 <version>2.7.8-SNAPSHOT</version>
             </dependency>
             <dependency>
-                <groupId>com.alicp.jetcache</groupId>
+                <groupId>org.vison.cache</groupId>
                 <artifactId>jetcache-redisson</artifactId>
                 <version>2.7.8-SNAPSHOT</version>
             </dependency>

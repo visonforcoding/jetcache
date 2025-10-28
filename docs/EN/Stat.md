@@ -68,7 +68,7 @@ With logback, you can use below configuration to output logs to a separate file:
     </encoder>
 </appender>
 
-<logger name="com.alicp.jetcache" level="INFO" additivity="false">
+<logger name="org.vison.cache" level="INFO" additivity="false">
     <appender-ref ref="JETCACHE_LOGFILE" />
 </logger>
 ```

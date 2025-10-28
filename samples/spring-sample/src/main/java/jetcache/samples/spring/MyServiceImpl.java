@@ -3,9 +3,9 @@
  */
 package jetcache.samples.spring;
 
-import com.alicp.jetcache.Cache;
-import com.alicp.jetcache.CacheManager;
-import com.alicp.jetcache.template.QuickConfig;
+import org.vison.cache.Cache;
+import org.vison.cache.CacheManager;
+import org.vison.cache.template.QuickConfig;
 import org.springframework.beans.factory.InitializingBean;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;

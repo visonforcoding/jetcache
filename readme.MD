@@ -5,6 +5,8 @@
 [![Project Map](https://sourcespy.com/shield.svg)](https://sourcespy.com/github/alibabajetcache/)
 
 # Introduction
+Modifled from [https://github.com/alibaba/jetcache](https://github.com/alibaba/jetcache)
+
 JetCache is a Java cache abstraction which provides uniform usage for different caching solutions. 
 It provides more powerful annotations than those in Spring Cache. The annotations in JetCache supports native TTL, 
 two level caching, and automatically refresh in distrubuted environments, also you can manipulate ```Cache``` instance by your code. 
@@ -135,7 +137,7 @@ public void init() {
 pom:
 ```xml
 <dependency>
-    <groupId>com.alicp.jetcache</groupId>
+    <groupId>org.vison.cache</groupId>
     <artifactId>jetcache-starter-redis</artifactId>
     <version>${jetcache.latest.version}</version>
 </dependency>

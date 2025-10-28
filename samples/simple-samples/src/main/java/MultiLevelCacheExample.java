@@ -1,10 +1,10 @@
-import com.alicp.jetcache.Cache;
-import com.alicp.jetcache.MultiLevelCacheBuilder;
-import com.alicp.jetcache.embedded.CaffeineCacheBuilder;
-import com.alicp.jetcache.redis.RedisCacheBuilder;
-import com.alicp.jetcache.support.Fastjson2KeyConvertor;
-import com.alicp.jetcache.support.JavaValueDecoder;
-import com.alicp.jetcache.support.JavaValueEncoder;
+import org.vison.cache.Cache;
+import org.vison.cache.MultiLevelCacheBuilder;
+import org.vison.cache.embedded.CaffeineCacheBuilder;
+import org.vison.cache.redis.RedisCacheBuilder;
+import org.vison.cache.support.Fastjson2KeyConvertor;
+import org.vison.cache.support.JavaValueDecoder;
+import org.vison.cache.support.JavaValueEncoder;
 import org.apache.commons.pool2.impl.GenericObjectPoolConfig;
 import redis.clients.jedis.JedisPool;
 

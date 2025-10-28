@@ -2,9 +2,9 @@
  * Created on 2022/07/15.
  */
 
-import com.alicp.jetcache.Cache;
-import com.alicp.jetcache.redis.springdata.RedisSpringDataCacheBuilder;
-import com.alicp.jetcache.support.Fastjson2KeyConvertor;
+import org.vison.cache.Cache;
+import org.vison.cache.redis.springdata.RedisSpringDataCacheBuilder;
+import org.vison.cache.support.Fastjson2KeyConvertor;
 import org.springframework.data.redis.connection.RedisClusterConfiguration;
 import org.springframework.data.redis.connection.RedisConnectionFactory;
 import org.springframework.data.redis.connection.RedisSentinelConfiguration;

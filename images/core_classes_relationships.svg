@@ -1,0 +1,87 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="800" height="500" viewBox="0 0 800 500">
+  <defs>
+    <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#000" />
+    </marker>
+  </defs>
+  
+  <!-- 背景 -->
+  <rect x="50" y="50" width="700" height="400" rx="10" ry="10" fill="#f9f9f9" stroke="#ccc" stroke-width="1" />
+  
+  <!-- 标题 -->
+  <text x="400" y="30" text-anchor="middle" font-family="Arial" font-size="16" font-weight="bold">核心类与接口关系</text>
+  
+  <!-- 节点 -->
+  <rect x="100" y="100" width="220" height="40" rx="5" ry="5" fill="#fff" stroke="#e74c3c" stroke-width="2" />
+  <text x="210" y="125" text-anchor="middle" font-family="Arial" font-size="14">JetCacheAutoConfiguration</text>
+  
+  <rect x="400" y="100" width="200" height="40" rx="5" ry="5" fill="#fff" stroke="#3498db" stroke-width="2" />
+  <text x="500" y="125" text-anchor="middle" font-family="Arial" font-size="14">GlobalCacheConfig</text>
+  
+  <rect x="400" y="180" width="200" height="40" rx="5" ry="5" fill="#fff" stroke="#2ecc71" stroke-width="2" />
+  <text x="500" y="205" text-anchor="middle" font-family="Arial" font-size="14">SpringConfigProvider</text>
+  
+  <rect x="400" y="260" width="200" height="40" rx="5" ry="5" fill="#fff" stroke="#9b59b6" stroke-width="2" />
+  <text x="500" y="285" text-anchor="middle" font-family="Arial" font-size="14">SimpleCacheManager</text>
+  
+  <rect x="100" y="180" width="180" height="40" rx="5" ry="5" fill="#fff" stroke="#e74c3c" stroke-width="2" />
+  <text x="190" y="205" text-anchor="middle" font-family="Arial" font-size="14">EnableMethodCache</text>
+  
+  <rect x="100" y="260" width="180" height="40" rx="5" ry="5" fill="#fff" stroke="#3498db" stroke-width="2" />
+  <text x="190" y="285" text-anchor="middle" font-family="Arial" font-size="14">ConfigSelector</text>
+  
+  <rect x="100" y="340" width="230" height="40" rx="5" ry="5" fill="#fff" stroke="#2ecc71" stroke-width="2" />
+  <text x="215" y="365" text-anchor="middle" font-family="Arial" font-size="14">JetCacheProxyConfiguration</text>
+  
+  <rect x="400" y="340" width="180" height="40" rx="5" ry="5" fill="#fff" stroke="#f39c12" stroke-width="2" />
+  <text x="490" y="365" text-anchor="middle" font-family="Arial" font-size="14">CacheAdvisor</text>
+  
+  <rect x="630" y="340" width="170" height="40" rx="5" ry="5" fill="#fff" stroke="#f39c12" stroke-width="2" />
+  <text x="715" y="365" text-anchor="middle" font-family="Arial" font-size="14">JetCacheInterceptor</text>
+  
+  <rect x="400" y="420" width="150" height="40" rx="5" ry="5" fill="#fff" stroke="#9b59b6" stroke-width="2" />
+  <text x="475" y="445" text-anchor="middle" font-family="Arial" font-size="14">CacheHandler</text>
+  
+  <rect x="650" y="420" width="150" height="40" rx="5" ry="5" fill="#fff" stroke="#e74c3c" stroke-width="2" />
+  <text x="725" y="445" text-anchor="middle" font-family="Arial" font-size="14">Cache接口</text>
+  
+  <rect x="100" y="420" width="180" height="40" rx="5" ry="5" fill="#fff" stroke="#3498db" stroke-width="2" />
+  <text x="190" y="445" text-anchor="middle" font-family="Arial" font-size="14">JetCacheBaseBeans</text>
+  
+  <!-- 连接线 -->
+  <path d="M210 140 L500 100" stroke="#000" stroke-width="2" marker-end="url(#arrowhead)" />
+  <text x="355" y="120" text-anchor="middle" font-family="Arial" font-size="12">配置</text>
+  
+  <path d="M210 140 L500 180" stroke="#000" stroke-width="2" marker-end="url(#arrowhead)" />
+  <text x="355" y="155" text-anchor="middle" font-family="Arial" font-size="12">创建</text>
+  
+  <path d="M210 140 L500 260" stroke="#000" stroke-width="2" marker-end="url(#arrowhead)" />
+  <text x="355" y="190" text-anchor="middle" font-family="Arial" font-size="12">创建</text>
+  
+  <path d="M190 220 L190 260" stroke="#000" stroke-width="2" marker-end="url(#arrowhead)" />
+  <text x="200" y="235" text-anchor="start" font-family="Arial" font-size="12">激活</text>
+  
+  <path d="M190 300 L215 340" stroke="#000" stroke-width="2" marker-end="url(#arrowhead)" />
+  <text x="200" y="315" text-anchor="start" font-family="Arial" font-size="12">选择</text>
+  
+  <path d="M215 380 L490 340" stroke="#000" stroke-width="2" marker-end="url(#arrowhead)" />
+  <text x="352.5" y="355" text-anchor="middle" font-family="Arial" font-size="12">创建</text>
+  
+  <path d="M215 380 L715 340" stroke="#000" stroke-width="2" marker-end="url(#arrowhead)" />
+  <text x="465" y="350" text-anchor="middle" font-family="Arial" font-size="12">创建</text>
+  
+  <path d="M715 380 L475 420" stroke="#000" stroke-width="2" marker-end="url(#arrowhead)" />
+  <text x="595" y="395" text-anchor="middle" font-family="Arial" font-size="12">使用</text>
+  
+  <path d="M475 460 L725 420" stroke="#000" stroke-width="2" marker-end="url(#arrowhead)" />
+  <text x="600" y="435" text-anchor="middle" font-family="Arial" font-size="12">操作</text>
+  
+  <path d="M500 300 L725 420" stroke="#000" stroke-width="2" marker-end="url(#arrowhead)" />
+  <text x="612.5" y="360" text-anchor="middle" font-family="Arial" font-size="12">管理</text>
+  
+  <path d="M190 460 L500 180" stroke="#000" stroke-width="2" marker-end="url(#arrowhead)" />
+  <text x="345" y="320" text-anchor="middle" font-family="Arial" font-size="12">提供</text>
+  
+  <path d="M190 460 L500 260" stroke="#000" stroke-width="2" marker-end="url(#arrowhead)" />
+  <text x="345" y="355" text-anchor="middle" font-family="Arial" font-size="12">提供</text>
+</svg>

@@ -1,0 +1,84 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="800" height="500" viewBox="0 0 800 500">
+  <defs>
+    <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#000" />
+    </marker>
+  </defs>
+  
+  <!-- 背景 -->
+  <rect x="50" y="50" width="700" height="400" rx="10" ry="10" fill="#f9f9f9" stroke="#ccc" stroke-width="1" />
+  
+  <!-- 标题 -->
+  <text x="400" y="30" text-anchor="middle" font-family="Arial" font-size="16" font-weight="bold">缓存工作流程</text>
+  
+  <!-- 节点 -->
+  <rect x="100" y="100" width="150" height="40" rx="5" ry="5" fill="#fff" stroke="#e74c3c" stroke-width="2" />
+  <text x="175" y="125" text-anchor="middle" font-family="Arial" font-size="14">应用启动</text>
+  
+  <rect x="300" y="100" width="200" height="40" rx="5" ry="5" fill="#fff" stroke="#3498db" stroke-width="2" />
+  <text x="400" y="125" text-anchor="middle" font-family="Arial" font-size="14">SpringConfigProvider</text>
+  
+  <rect x="550" y="100" width="200" height="40" rx="5" ry="5" fill="#fff" stroke="#2ecc71" stroke-width="2" />
+  <text x="650" y="125" text-anchor="middle" font-family="Arial" font-size="14">CacheBuilderTemplate</text>
+  
+  <rect x="100" y="180" width="150" height="40" rx="5" ry="5" fill="#fff" stroke="#e74c3c" stroke-width="2" />
+  <text x="175" y="205" text-anchor="middle" font-family="Arial" font-size="14">方法调用</text>
+  
+  <rect x="300" y="180" width="200" height="40" rx="5" ry="5" fill="#fff" stroke="#3498db" stroke-width="2" />
+  <text x="400" y="205" text-anchor="middle" font-family="Arial" font-size="14">JetCacheInterceptor</text>
+  
+  <rect x="300" y="260" width="200" height="40" rx="5" ry="5" fill="#fff" stroke="#3498db" stroke-width="2" />
+  <text x="400" y="285" text-anchor="middle" font-family="Arial" font-size="14">CacheInvokeContext</text>
+  
+  <rect x="300" y="340" width="200" height="40" rx="5" ry="5" fill="#fff" stroke="#f39c12" stroke-width="2" />
+  <text x="400" y="365" text-anchor="middle" font-family="Arial" font-size="14">CacheHandler</text>
+  
+  <rect x="300" y="420" width="200" height="40" rx="5" ry="5" fill="#fff" stroke="#9b59b6" stroke-width="2" />
+  <text x="400" y="445" text-anchor="middle" font-family="Arial" font-size="14">CacheManager</text>
+  
+  <rect x="550" y="420" width="200" height="40" rx="5" ry="5" fill="#fff" stroke="#2ecc71" stroke-width="2" />
+  <text x="650" y="445" text-anchor="middle" font-family="Arial" font-size="14">Cache实现</text>
+  
+  <rect x="100" y="260" width="180" height="40" rx="5" ry="5" fill="#fff" stroke="#e74c3c" stroke-width="2" />
+  <text x="190" y="285" text-anchor="middle" font-family="Arial" font-size="14">@Cached注解</text>
+  
+  <rect x="550" y="260" width="200" height="40" rx="5" ry="5" fill="#fff" stroke="#9b59b6" stroke-width="2" />
+  <text x="650" y="285" text-anchor="middle" font-family="Arial" font-size="14">LinkedHashMap/Caffeine</text>
+  
+  <rect x="550" y="340" width="200" height="40" rx="5" ry="5" fill="#fff" stroke="#9b59b6" stroke-width="2" />
+  <text x="650" y="365" text-anchor="middle" font-family="Arial" font-size="14">Redis/Redisson</text>
+  
+  <rect x="100" y="340" width="180" height="40" rx="5" ry="5" fill="#fff" stroke="#9b59b6" stroke-width="2" />
+  <text x="190" y="365" text-anchor="middle" font-family="Arial" font-size="14">MultiLevelCache</text>
+  
+  <!-- 连接线 -->
+  <path d="M175 140 L400 100" stroke="#000" stroke-width="2" marker-end="url(#arrowhead)" />
+  <text x="287.5" y="120" text-anchor="middle" font-family="Arial" font-size="12">初始化</text>
+  
+  <path d="M400 140 L650 100" stroke="#000" stroke-width="2" marker-end="url(#arrowhead)" />
+  <text x="525" y="120" text-anchor="middle" font-family="Arial" font-size="12">初始化</text>
+  
+  <path d="M190 180 L400 180" stroke="#000" stroke-width="2" marker-end="url(#arrowhead)" />
+  <text x="295" y="170" text-anchor="middle" font-family="Arial" font-size="12">@Cached注解</text>
+  
+  <path d="M400 220 L400 260" stroke="#000" stroke-width="2" marker-end="url(#arrowhead)" />
+  <text x="410" y="240" text-anchor="start" font-family="Arial" font-size="12">创建上下文</text>
+  
+  <path d="M400 300 L400 340" stroke="#000" stroke-width="2" marker-end="url(#arrowhead)" />
+  <text x="410" y="320" text-anchor="start" font-family="Arial" font-size="12">委托处理</text>
+  
+  <path d="M400 380 L400 420" stroke="#000" stroke-width="2" marker-end="url(#arrowhead)" />
+  <text x="410" y="400" text-anchor="start" font-family="Arial" font-size="12">获取缓存</text>
+  
+  <path d="M400 460 L650 420" stroke="#000" stroke-width="2" marker-end="url(#arrowhead)" />
+  <text x="525" y="435" text-anchor="middle" font-family="Arial" font-size="12">返回缓存实例</text>
+  
+  <path d="M650 380 L650 340" stroke="#000" stroke-width="2" marker-end="url(#arrowhead)" />
+  <text x="660" y="360" text-anchor="start" font-family="Arial" font-size="12">远程缓存</text>
+  
+  <path d="M650 300 L650 260" stroke="#000" stroke-width="2" marker-end="url(#arrowhead)" />
+  <text x="660" y="280" text-anchor="start" font-family="Arial" font-size="12">本地缓存</text>
+  
+  <path d="M650 260 L190 340" stroke="#000" stroke-width="2" marker-end="url(#arrowhead)" />
+  <text x="420" y="300" text-anchor="middle" font-family="Arial" font-size="12">多级缓存</text>
+</svg>

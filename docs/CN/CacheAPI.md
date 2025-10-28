@@ -1,6 +1,6 @@
 
 # 简介
-JetCache2.0的核心是```com.alicp.jetcache.Cache```接口（以下简写为```Cache```），它提供了部分类似于```javax.cache.Cache```（JSR107）的API操作。没有完整实现JSR107的原因包括：
+JetCache2.0的核心是```org.vison.cache.Cache```接口（以下简写为```Cache```），它提供了部分类似于```javax.cache.Cache```（JSR107）的API操作。没有完整实现JSR107的原因包括：
 1. 希望维持API的简单易用。
 1. 对于特定的远程缓存系统来说，```javax.cache.Cache```中定义的有些操作无法高效率的实现，比如一些原子操作方法和类似```removeAll()```这样的方法。
 1. JSR107比较复杂，完整实现要做的工作很多。

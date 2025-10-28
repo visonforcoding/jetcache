@@ -3,7 +3,7 @@
  */
 package jetcache.samples.springboot;
 
-import com.alicp.jetcache.anno.config.EnableMethodCache;
+import org.vison.cache.anno.config.EnableMethodCache;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.ConfigurableApplicationContext;

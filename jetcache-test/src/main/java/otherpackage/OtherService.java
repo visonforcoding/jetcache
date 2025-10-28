@@ -1,6 +1,6 @@
 package otherpackage;
 
-import com.alicp.jetcache.anno.Cached;
+import org.vison.cache.anno.Cached;
 
 /**
  * Created by huangli on 16/3/2.

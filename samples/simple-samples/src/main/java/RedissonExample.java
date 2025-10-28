@@ -2,9 +2,9 @@
  * Created on 2022/11/11.
  */
 
-import com.alicp.jetcache.Cache;
-import com.alicp.jetcache.redisson.RedissonCacheBuilder;
-import com.alicp.jetcache.support.Fastjson2KeyConvertor;
+import org.vison.cache.Cache;
+import org.vison.cache.redisson.RedissonCacheBuilder;
+import org.vison.cache.support.Fastjson2KeyConvertor;
 import org.redisson.Redisson;
 import org.redisson.config.Config;
 

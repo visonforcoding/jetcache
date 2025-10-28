@@ -3,10 +3,10 @@
  */
 package jetcache.samples.sync;
 
-import com.alicp.jetcache.Cache;
-import com.alicp.jetcache.CacheManager;
-import com.alicp.jetcache.anno.CacheType;
-import com.alicp.jetcache.template.QuickConfig;
+import org.vison.cache.Cache;
+import org.vison.cache.CacheManager;
+import org.vison.cache.anno.CacheType;
+import org.vison.cache.template.QuickConfig;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.ConfigurableApplicationContext;

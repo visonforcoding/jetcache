@@ -1,1 +1,1 @@
-com.alicp.jetcache.autoconfigure.JetCacheAutoConfiguration
+org.vison.cache.autoconfigure.JetCacheAutoConfiguration
